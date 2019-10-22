@@ -1,3 +1,5 @@
+Welcome to ADI's workshop on GIS! Before we begin, a big thank you to the Barnard ERC, the Columbia Center for Spacial Research, and Dr. Rod! During this workshop, I hope that you learn a lot and take your new skills in GIS and visual Data Science to your other courses and projects. Enjoy!
+
 # Creating a Basic Map in ArcMap
 
 *This tutorial will cover some basics of the ArcMap user interface, using map symbology, and creating a map layout. In this tutorial we use the following data (right click on each link and select "open link in a new tab" to download the files), although any other GIS datasets will also work:*
@@ -5,7 +7,9 @@
 * [Parks Properties](https://data.cityofnewyork.us/api/geospatial/rjaj-zgq7?method=export&format=Shapefile)
 * [Hydrography](https://data.cityofnewyork.us/api/geospatial/drh3-e2fd?method=export&format=Shapefile)
 
-Once you've downloaded each of the three folders, you will have to extract the files from each folder (these folders are zipped because of their size). Extract **ALL** the files (from the three zipped folders) to the same folder (you could create a new folder for this exercise called "Arc_Lab_1", etc.). Make sure all the files go into that same folder. Each of the three zipped folders contains 6-8 files, and these files need to stay together!! 
+NOTE: All three of the files above are shapefiles meaning that they contain geospacial vector data, primarily used for mapping and data interoperability.
+
+Once you've downloaded each of the three folders, you will have to extract the files from each folder (these folders are zipped because of their size). Extract **ALL** the files (from the three zipped folders) to the same folder (you could create a new folder for this exercise called "ADI_GIS_Workshop", etc.). Make sure all the files go into that same folder. Each of the three zipped folders contains 6-8 files, and these files need to stay together!! 
 
 ![t1-1.png](https://github.com/jai2125/gis_tutorials/blob/master/Images/Tutorial_01/t1_1.PNG)
 
@@ -27,11 +31,11 @@ Alternatively, to Add Data to the map project, you can also click on the `Add Da
 
 ![t1_3.png](https://github.com/alisaalias/gis_tutorials/blob/50374381d33d00ceb24a3403c195723b7a7666e0/Images/Tutorial_01/t1_3.png)
 
-To see the data associated with each shapefile, right click on the layer name and choose `Open Attribute Table.` For the PLUTO layer, you will see there is a spreadsheet/table with many rows and columns. 
+To see the data associated with each shapefile, right click on the layer name and choose `Open Attribute Table.` For the PLUTO layer, you will see there is a spreadsheet/table with many rows and columns. In addition to shapefile data, you can also use attribute data to visualize in a map. Though we won't be going over attribute data during this workshop, all of you would have to do is add the attribute data to your ArcMap file and join the data to your shapefile or basemap using a unique ID, and symbolize the attribute data of your choice on the basemap.
 
 ![t1-2_2.png](https://github.com/alisaalias/gis_tutorials/blob/50374381d33d00ceb24a3403c195723b7a7666e0/Images/Tutorial_01/t1-2_2.png)
 
-Each row represents a polygon of one building footprint. The columns contain geographic information about each building, but also additional information. For example, the column "NumFloors" represents the number of floors in that building. 
+Each row represents a polygon of one building footprint. The columns contain geographic information about each building, but also additional information. For example, the column "NumFloors" represents the number of floors in that building. Note that each observation in a collumn must have the same data type (i.e. String, double, boolean) which is necessary to map that data.
 
 ![t-2_3.png](https://github.com/alisaalias/gis_tutorials/blob/50374381d33d00ceb24a3403c195723b7a7666e0/Images/Tutorial_01/t1-2_3.png)
 
@@ -58,6 +62,8 @@ Option B: To visualize your data based on a qualitative category, choose `Catego
 ![t1-7_new.png](https://github.com/alisaalias/gis_tutorials/blob/alisaalias-patch-1/Images/Tutorial_01/t1-7_new.png)
 
 Option C: To visualize your data based on numeric quantities, select `Quantities` on the left and specify (by clicking) the type of visualization. In the image below, `Graduated Colors` is chosen. In the `Value` drop-down menu, select the field by which you'd like to visualize your data. If appropriate, you can normalize your data by another quantity field by selecting it from the `Normalization` drop-down. You can change the color of your symbols by either using the Color Ramp drop-down menu or by double-clicking on the swatches on the left of the `Range` list. In the image below, the `NumFloors` value is chosen. You might get an error that the max sample size has been reached. The fix for this error is described in the following section.
+
+Note that when you're designing the way that you want to visualize your data, keep in mind the various abilities that your viewers may have. For example, some viewers may have difficulties distinguishing similar shades of the same color or see neon hues of certain colors. Studies have shown that the most visibly accessible color scales are ranges from yellow to blue. That being said, have fun with your visualizations and try out different things!
 
 ![t1-8_new.png](https://github.com/alisaalias/gis_tutorials/blob/alisaalias-patch-1/Images/Tutorial_01/t1-8_new.png)
 
@@ -111,4 +117,4 @@ You can change the position the elements you inserted into the page area.
 
 When you are finished with your map, you can export it to a variety of formats. Go to `File` > `Export Map…` to reach a dialogue box where you can choose your export format and save your map. You will find that you can export your map as an image file (i.e. JPG) for immediate use or as a vector-based file (i.e. EPS) for further graphics editing.
 
-You made a map!! To turn in: Export your map to a pdf file. Save the file with your name and week 2 lab in the filename, and upload it to courseworks.
+You made a map!! To turn in: Export your map to a pdf file. Thank you to the ERC, the Columbia Center for Spacial Research, and Dr. Rod!
